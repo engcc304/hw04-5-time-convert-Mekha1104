@@ -18,18 +18,18 @@
 
 int main() {
     
-    float days ;
+    int days ;
 
     //รับค่าจำนวนวันจากผู้ใช้
     printf( "Input Days : " ) ;
-    scanf( "%f",&days ) ;
+    scanf( "%d",&days ) ;
 
     //เเปลงจากหน่วย วัน เป็น วินาที
-    float seconds_per_days = 24 * 60 * 60 ;
-    float seconds = days * seconds_per_days ;
+    int seconds_per_days = 24 * 60 * 60 ;
+    int seconds = days * seconds_per_days ;
 
     // เเสดงผลลัพธิ์
-    printf("%0.1f days = %0.1f * seconds\n", days , seconds ) ;
+    printf("%d days = %d seconds\n", days , seconds ) ;
 
     return 0 ;
 }
